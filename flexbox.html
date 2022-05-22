@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .container {
+            display: flex;
+
+            /* Property Lainnya*/
+            width: 800px;
+            height: 250px;
+            background-color: #11c5c6;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+
+        .box {
+            
+            /* property lainnya */
+            background-color: #fbdd1c;
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .first {
+            flex-grow: 1;
+        }
+
+        .second {
+            flex-grow: 2;
+        }
+
+        .third {
+            flex-grow: 1;
+        }
+
+/* flex-grow --> mengisi ruang relatif, tetapkan 1 nilai maka semua ukuran tiap kotak akan sama namun bila masing masing diberi nilai maka ketiga kotak itu akan
+menyesuaikan ruang kosong yang tersisa didalam container */
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box first"></div>
+        <div class="box second"></div>
+        <div class="box third"></div>
+    </div>
+</body>
+
+</html>
